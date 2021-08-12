@@ -1,15 +1,29 @@
-.App {
-  text-align: center;
+
+.app {
+    display: flex;
+    flex-flow: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  flex: 1 1 auto;
+}
+
+.sidebar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
+  flex: 0 0 175px;
+  padding-left: 10px;
+  color: wheat;
+  background-color: rgb(51,51,51);
+  height: 100vh; 
 }
 
+.sidebar-content {
+  flex:1;
+}
+
+.sidebar-footer {
+  margin-bottom: 10px;
+  color: wheat;
+  font-size: small;
+}
